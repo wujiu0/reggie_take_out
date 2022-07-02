@@ -23,7 +23,7 @@ public class R<T> {
     }
 
     public static <T> R<T> error(String msg) {
-        R r = new R();
+        R<T> r = new R<>();
         r.msg = msg;
         r.code = 0;
         return r;
